@@ -785,32 +785,56 @@ h3 {
 
 
 @media (max-width: 768px) {
-  .site-header {
-    position: sticky;
-    top: 0;
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: min(100% - 28px, 1120px);
   }
 
   .nav-wrapper {
-    min-height: 78px;
+    min-height: 82px;
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
+  }
+
+  .header-actions {
+    display: none !important;
+  }
+
+  .main-nav {
+    position: absolute;
+    top: 82px;
+    left: 14px;
+    right: 14px;
+    width: auto;
+  }
+
+  .menu-toggle {
+    display: block;
+    margin-left: auto;
+    flex-shrink: 0;
+  }
+
+  .logo {
+    gap: 8px;
+    min-width: 0;
   }
 
   .logo-img {
-    width: 54px;
-    height: 54px;
+    width: 52px;
+    height: 52px;
     transform: none;
     margin-right: 0;
   }
 
-  .logo {
-    gap: 10px;
-  }
-
   .logo strong {
-    font-size: 16px;
-    line-height: 1.05;
+    font-size: 15px;
+    line-height: 1;
   }
 
   .logo small {
@@ -818,23 +842,19 @@ h3 {
     margin-top: 4px;
   }
 
-  .main-nav {
-    top: 78px;
-  }
-
   .hero {
     min-height: auto;
-    padding: 70px 0 60px;
-    background-position: center right;
+    padding: 64px 0 58px;
+    background-position: center;
   }
 
-  .hero-content {
-    max-width: 100%;
+  .hero-grid {
+    grid-template-columns: 1fr;
   }
 
   h1 {
-    font-size: 38px;
-    letter-spacing: -0.04em;
+    font-size: 40px;
+    line-height: 1.08;
   }
 
   .hero-text {
@@ -843,11 +863,14 @@ h3 {
 
   .hero-actions {
     flex-direction: column;
-    align-items: stretch;
   }
 
-  .btn {
+  .hero-actions .btn {
     width: 100%;
+  }
+
+  .trust-list {
+    gap: 10px;
   }
 
   .trust-list span {
@@ -855,25 +878,6 @@ h3 {
   }
 
   .service-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .service-card {
-    min-height: 230px;
-  }
-
-  .service-card::before {
-    background: linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0.98) 0%,
-      rgba(255, 255, 255, 0.9) 55%,
-      rgba(255, 255, 255, 0.45) 100%
-    );
-  }
-
-  .contact-grid,
-  .split,
-  .process-grid {
     grid-template-columns: 1fr;
   }
 }
