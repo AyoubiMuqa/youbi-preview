@@ -13,8 +13,9 @@
 
 <body>
 <header class="site-header">
-    <div class="container nav-wrapper">
 
+    <!-- Desktop Header: bleibt für Computer -->
+    <div class="container nav-wrapper desktop-header">
         <a href="index.html" class="logo">
             <img src="images/logo.png" alt="Yobi Reinigungsservice Logo" class="logo-img">
             <span>
@@ -22,12 +23,6 @@
         <small>Berlin & Umgebung</small>
       </span>
         </a>
-
-        <button class="menu-toggle" aria-label="Menü öffnen">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
 
         <nav class="main-nav">
             <a href="index.html#start" class="active">Startseite</a>
@@ -41,8 +36,36 @@
             <a href="tel:+491739528317" class="phone-btn">☎ 0173 9528317</a>
             <a href="index.html#kontakt" class="offer-btn">Angebot anfragen</a>
         </div>
-
     </div>
+
+    <!-- Mobile Header: nur für Handy -->
+    <div class="container mobile-header">
+        <a href="index.html" class="mobile-logo">
+            <img src="images/logo.png" alt="Yobi Reinigungsservice Logo" class="mobile-logo-img">
+            <span>
+        <strong>Yobi Reinigungsservice</strong>
+        <small>Berlin & Umgebung</small>
+      </span>
+        </a>
+
+        <button class="mobile-menu-toggle" aria-label="Menü öffnen">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="mobile-nav">
+            <a href="index.html#start">Startseite</a>
+            <a href="index.html#leistungen">Leistungen</a>
+            <a href="index.html#ueber-uns">Über uns</a>
+            <a href="index.html#ablauf">Ablauf</a>
+            <a href="index.html#kontakt">Kontakt</a>
+            <a href="tel:+491739528317">☎ 0173 9528317</a>
+            <a href="https://wa.me/491739528317" class="mobile-whatsapp">WhatsApp kontaktieren</a>
+            <a href="index.html#kontakt" class="mobile-offer">Angebot anfragen</a>
+        </nav>
+    </div>
+
 </header>
 
 <main>
