@@ -14,5 +14,3 @@ mobileNavLinks.forEach((link) => {
   });
 });
 
-const contactForm = document.querySelector(".contact-form");
-
