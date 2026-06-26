@@ -1026,4 +1026,11 @@ h3 {
   .mobile-nav {
     top: 82px;
   }
+  .privacy-version {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 14px;
+  }
 }
