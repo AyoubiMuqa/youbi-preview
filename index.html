@@ -215,37 +215,37 @@
                 </div>
             </div>
 
-            <form class="contact-form">
+            <form class="contact-form" action="https://formspree.io/f/mqevqzop" method="POST">
                 <label>
                     Name
-                    <input type="text" placeholder="Ihr Name" />
+                    <input type="text" name="name" placeholder="Ihr Name" required />
                 </label>
 
                 <label>
                     Telefon
-                    <input type="tel" placeholder="+49 ..." />
+                    <input type="tel" name="telefon" placeholder="+49 ..." required />
                 </label>
 
                 <label>
                     E-Mail
-                    <input type="email" placeholder="ihre@email.de" />
+                    <input type="email" name="email" placeholder="ihre@email.de" required />
                 </label>
 
                 <label>
                     Leistung
-                    <select>
-                        <option>Büroreinigung</option>
-                        <option>Wohnungsreinigung</option>
-                        <option>Treppenhausreinigung</option>
-                        <option>Fensterreinigung</option>
-                        <option>Grundreinigung</option>
-                        <option>Umzugsreinigung</option>
+                    <select name="leistung" required>
+                        <option value="Büroreinigung">Büroreinigung</option>
+                        <option value="Wohnungsreinigung">Wohnungsreinigung</option>
+                        <option value="Treppenhausreinigung">Treppenhausreinigung</option>
+                        <option value="Fensterreinigung">Fensterreinigung</option>
+                        <option value="Grundreinigung">Grundreinigung</option>
+                        <option value="Umzugsreinigung">Umzugsreinigung</option>
                     </select>
                 </label>
 
                 <label>
                     Nachricht
-                    <textarea placeholder="Worum geht es?"></textarea>
+                    <textarea name="nachricht" placeholder="Worum geht es?" required></textarea>
                 </label>
 
                 <button type="submit" class="btn btn-primary">Anfrage senden</button>

@@ -16,10 +16,3 @@ mobileNavLinks.forEach((link) => {
 
 const contactForm = document.querySelector(".contact-form");
 
-if (contactForm) {
-  contactForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-    alert("Danke für Ihre Anfrage! Wir melden uns schnellstmöglich bei Ihnen.");
-    contactForm.reset();
-  });
-}
